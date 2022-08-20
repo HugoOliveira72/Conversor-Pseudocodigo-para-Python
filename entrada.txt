@@ -1,1 +1,1 @@
-print("Ola mundo")
+escreval("Ola mundo")

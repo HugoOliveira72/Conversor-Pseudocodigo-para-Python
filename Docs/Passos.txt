@@ -2,3 +2,17 @@
 - Listar as Palavras reservadas Python
 - Realizar a comparação entre as duas linguagens
 - Processo conversão (Pegar as palavras do visualg e substituir no Python)
+
+
+texto = txt inicial
+
+procurar
+
+substituir
+
+return textoalterado 
+
+
+----------------
+
+
