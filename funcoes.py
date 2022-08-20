@@ -10,116 +10,104 @@ def substituirArquivo(text, find, change):
 
 
 def gravarArquivo(text):
-    with open("entrada.txt", "w", encoding="UTF-8") as file:
+    with open("saida.txt", "w", encoding="UTF-8") as file:
         file.write(text)
 
-# ____________________________________ESCREVAL-------------------------------------------#
 
-# Definição da troca
-procurar = "escreval"
-substituir = "print"
+def conveter():
+    # ____________________________________ESCREVAL STRING____________________________________#
 
-# Leitura do arquivo1.2
-texto = readFile()
+    # Leitura do arquivo1.2
+    texto = readFile()
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    #Definição da troca
+    procurar = "escreval"
+    substituir = "print"
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
 
-# ____________________________________ESCREVA-------------------------------------------#
+    # Substituição
+    textoAlterado = substituirArquivo(texto, procurar, substituir)
 
-# Definição da troca
-procurar = 'escreva("'
-substituir = 'print(end=""+"'
+    # # ____________________________________ESCREVA STRING____________________________________#
 
-# Leitura do arquivo1.2
-texto = readFile()
+    # Definição da troca
+    procurar = 'escreva("'
+    substituir = 'print(end=""+"'
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
 
-# ____________________________________SE SENAO________________________________#
+    # # ____________________________________ESCREVA NOTSTRING____________________________________#
 
-# Definição da troca
+    #Definição da troca
+    procurar = 'escreva('
+    substituir = 'print(end=""+'
 
-procurar = 'senao se'
-substituir = 'elif'
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Leitura do arquivo1.2
-texto = readFile()
+    # # ____________________________________SE SENAO________________________________#
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    # Definição da troca
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
+    procurar = 'senao se'
+    substituir = 'elif'
 
-# ____________________________________FIMSE________________________________#
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Definição da troca
+    # # ____________________________________FIMSE________________________________#
 
-procurar = 'fimse'
-substituir = 'else'
+    # # Definição da troca
 
-# Leitura do arquivo1.2
-texto = readFile()
+    procurar = 'fimse'
+    substituir = ''
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
+    # ____________________________________SENAO________________________________#
 
-# ____________________________________SE____________________________________#
+    # Definição da troca
 
-# Definição da troca
+    procurar = 'senao'
+    substituir = 'else'
 
-procurar = 'se'
-substituir = 'if'
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
+    
+    # # ____________________________________SE____________________________________#
 
-# Leitura do arquivo1.2
-texto = readFile()
+    # Definição da troca
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    procurar = 'se'
+    substituir = 'if'
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# ____________________________________ENTAO____________________________________#
-# Definição da troca
+    # # ____________________________________ENTAO____________________________________#
 
-procurar = 'entao'
-substituir = ':'
+    # # Definição da troca
 
-# Leitura do arquivo1.2
-texto = readFile()
+    procurar = 'entao'
+    substituir = ':'
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
+    # ____________________________________PARA________________________________#
 
-# ____________________________________SENAO________________________________#
+    # # Definição da troca
 
-# Definição da troca
+    procurar = 'para'
+    substituir = 'for'
 
-procurar = 'senao'
-substituir = 'else'
+    # Substituição
+    textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-# Leitura do arquivo1.2
-texto = readFile()
+    gravarArquivo(textoAlterado)
 
-# Substituição
-textoAlterado = substituirArquivo(texto, procurar, substituir)
-
-# Reescrever o arquivo com as palavras corretas
-gravarArquivo(textoAlterado)
-
-# ____________________________________PARA________________________________#
+# MAIN
+conveter()
