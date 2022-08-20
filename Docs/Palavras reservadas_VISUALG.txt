@@ -1,0 +1,113 @@
+
+PALAVRAS RESERVADAS VISUALG
+
+==============================================
+aleatório   escreva         inicio      pausa
+algoritmo   escreval        int         real
+arquivo     faca            inteiro     procedimento
+ate         falso           interrompa  repita
+caractere   fimalgoritmo    leia        retorne
+caso        fimenquanto l   impatela    se
+cronometro  fimenquanto     logico      senao
+debug       fimfuncao       mod         timer
+e           fimpara         nao         var
+eco         fimprocedimento ou          vetor
+enquanto    fimrepita       outrocaso   verdadeiro
+entao       fimse           para        xou
+escolha     função          passo
+==============================================
+
+for i in range()
+listaVs
+for v in ListaVs
+
+
+
+TIPOS DE DADOS
+
+inteiro     caractere       real        logico      booleano
+
+==============================================
+
+OPERADORES
+
+Aritméticos: + (soma), - (subtração), \ (divisão) e mod (resto)
+
+Caracteres: + (concatenação de cadeias de caracteres)
+
+Relacionais: = (igualdade), < (menor que), > (maior que), <= (menor ou igual a), => (maior ou
+igual a), <> (diferente)
+
+Lógicos: não (negação), ou (ou lógico), e (e lógico), xou (ou exclusivo)
+
+Atribuição: <-
+
+==============================================
+
+DESVIO CONDICIONAL
+
+SE  SENAO   FIMSE
+
+ESCOLHA     CASO    OUTROCASO   FIMESCOLHA
+
+==============================================
+
+ESTRUTURAS DE REPETIÇÃO
+
+PARA    FIMPARA
+
+para (variável) de (inicio) ate (fim) faca
+    (Sequência de comandos)
+fimpara
+
+
+==============================================
+
+ENQUANTO    FIMENQUANTO
+
+enquanto (condição) faca
+    (Bloco de comandos)
+fimenquanto
+
+
+=================================================
+
+MATRIZES
+
+Matriz unidimencional
+
+VETOR
+
+Nome_da_variável: vetor[início..fim] de tipo_de_dado
+
+================================================
+
+SUB ROTINAS
+
+PROCEDIMENTO        FIMPROCEDIMENTO
+
+procedimento nome_do_procedimento(tipo_da_variavel
+nome_da_variável_1, nome_da_variavél_2, ... ,
+tipo_da_variavel nome_da_variável_N)
+inicio
+(Bloco de comandos)
+fimprocedimento
+
+FUNCAO      FIMFUNCAO
+
+função nome_da_funcao(tipo_da_variavel nome_da_variável_1,
+nome_da_variavél_2, ... , tipo_da_variavel
+nome_da_variável_N): tipo_de_retorno
+inicio
+(Bloco de comandos)
+fimfuncao
+
+
+================================================
+
+ENTRADA E SAIDA
+
+LEIA    ESCREVA     ESCREVAL
+
+leia(lista_de_nomes_de_variaveis)
+escreva(lista_de_nomes_de_variaveis_ou_constantes)

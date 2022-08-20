@@ -1,0 +1,4 @@
+- Listar as Palavras reservadas do VISUALG
+- Listar as Palavras reservadas Python
+- Realizar a comparação entre as duas linguagens
+- Processo conversão (Pegar as palavras do visualg e substituir no Python)
