@@ -1,0 +1,9 @@
+print("Hello world!")
+print(b)
+print(end=""+a)
+print(end=""+"Gerson")
+
+if a < 10 :
+  print(end=""+"Charles")
+elif
+  print(end=""+"Conde e dracula")
