@@ -1,0 +1,1 @@
+Conversor de código, converterá arquivos visualg (pseudocodigo) para python
