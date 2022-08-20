@@ -1,20 +1,22 @@
-from Operations.fileActions import readFile, substituirArquivo
+from Operations.fileActions import readFile, readFileLines, replaceFile
+from Operations.stringExtensios import treatWord
+
+
+def separateWords(line):
+    counterWords = 0
+    w1 = ""
+    for word in line.split():
+        counterWords += 1
+        if counterWords == 1:
+            w1 = word.replace("Â¬"," ")
+        else:
+            w2 = word
+    return w1,w2
 
 def convertWord(texto):
-    file = open('Docs/Base.txt')
-    lines = file.readlines()
-    
-
-    # print(lines)
+    lines = readFileLines("Docs/","Base")
     for line in lines:
-        counterWords = 0
-        for word in line.split():
-            # print(word)
-            counterWords += 1
-            if counterWords == 1:
-                w1 = word
-            else:
-                w2 = word
-        texto =  substituirArquivo(texto, w1, w2)
+        find,change = separateWords(line)
+        texto =  replaceFile(texto, find, change)
     
     return texto

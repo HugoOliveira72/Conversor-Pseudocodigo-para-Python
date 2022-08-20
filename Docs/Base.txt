@@ -1,3 +1,8 @@
-escreval( print 
-escreva(" print(end=""+ 
-escreva(
+escreval( print( 
+escreva(" print(end=""+" 
+escreva( print(end=""+ 
+senao¬se elif 
+senao else 
+fimse space
+se if 
+entao :

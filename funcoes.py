@@ -2,7 +2,7 @@ from Operations.convertCommand import convertWord
 from Operations.fileActions import *
 
 
-def conveter():
+def converter():
     # ____________________________________ESCREVAL STRING____________________________________#
 
     # Leitura do arquivo1.2
@@ -81,7 +81,6 @@ def conveter():
     # # Substituição
     # textoAlterado = substituirArquivo(textoAlterado, procurar, substituir)
 
-    gravarArquivo(textoAlterado)
+    writeFile(textoAlterado)
 
-# MAIN
-conveter()
+converter()
