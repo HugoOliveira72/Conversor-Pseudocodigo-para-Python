@@ -3,7 +3,7 @@ def readFile(path,filename):
         return file.read()
 
 def replaceFile(text, find, change):
-    return text.replace(find, change)
+    return text.replace(find,change)
 
 def writeFile(text):
     with open("saida.txt", "w", encoding="UTF-8") as file:

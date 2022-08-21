@@ -1,6 +1,6 @@
 #PALAVRAS JA VALIDADAS
 #se, entao, escreva, escreval, fimse
-linha =['se 1 > 0 entao\n', 'escreval("rolinha")','senao', 'fimse']
+linha =['se 1 > 0 entao\n', 'escreval("TEST")','senao', 'fimse']
 convertido = ''
 variavel = ''
 variavel_anterior = ''

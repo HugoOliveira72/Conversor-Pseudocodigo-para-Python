@@ -6,7 +6,7 @@ def converter():
     # ____________________________________ESCREVAL STRING____________________________________#
 
     # Leitura do arquivo1.2
-    texto = readFile('','entrada')
+    texto = readFile("","entrada")
     textoAlterado = convertWord(texto)
 
     #Definição da troca

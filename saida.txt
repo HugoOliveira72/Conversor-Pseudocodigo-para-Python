@@ -3,4 +3,4 @@ if a = 0 :
    print(end=""+"a é 0")
 elif a = 2 :
    print(end=""+"a é 2")
-space
+'

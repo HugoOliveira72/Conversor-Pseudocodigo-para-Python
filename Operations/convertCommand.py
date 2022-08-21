@@ -8,7 +8,7 @@ def separateWords(line):
     for word in line.split():
         counterWords += 1
         if counterWords == 1:
-            w1 = word.replace("Â¬"," ")
+            w1 = treatWord(word)
         else:
             w2 = word
     return w1,w2
