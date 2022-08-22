@@ -1,0 +1,11 @@
+escreval(
+escreval("
+escreva("
+escreva(
+senao se
+senao
+fimse
+se
+entao
+fimpara
+para

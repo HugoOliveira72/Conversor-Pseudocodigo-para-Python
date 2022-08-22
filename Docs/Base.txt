@@ -1,9 +1,0 @@
-escreval( print( 
-escreval(" print(" 
-escreva(" print(end=""+" 
-escreva( print(end=""+ 
-senao¬se elif 
-senao else 
-fimse ' 
-se if 
-entao :
