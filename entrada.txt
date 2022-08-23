@@ -1,6 +1,6 @@
 a <- 2
 se a = 0 entao
-   escreva("a é 0")
+   escreva("a é 0 senao se")
 senao se a = 2 entao
    escreva("a é 2")
 fimse

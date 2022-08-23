@@ -1,3 +1,5 @@
+=
+<-
 escreval(
 escreval("
 escreva("
