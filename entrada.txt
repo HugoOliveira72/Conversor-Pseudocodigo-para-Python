@@ -1,6 +1,12 @@
-a <- 2
+a <- 29
 se a = 0 entao
    escreva("a é 0 senao se")
-senao se a = 2 entao
+senao se a = 29 entao
    escreva("a é 2")
+senao
+   escreva("a é diferente de qualquer valor")
 fimse
+
+para i de 1 ate 5 passo 9 faca:
+   escreval(i)
+fimpara

@@ -1,5 +1,10 @@
-a = 2
+a = 29
 if a == 0 :
-   print(end=""+"a é 0 elif")
+   print(end=""+"a eh 0 elif")
 elif a == 2 :
-   print(end=""+"a é 2")
+   print(end=""+"a eh 2")
+elif
+   print(end=""+"a eh diferente de qualquer valor")
+
+
+for i in range(1,  5,  9)   print(i)

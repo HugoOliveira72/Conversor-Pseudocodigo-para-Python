@@ -13,3 +13,9 @@ def readFileLines(path,filename):
     file = open(f'{path}{filename}.txt')
     lines = file.readlines()
     return lines
+
+def convertToText(lines):
+    texto = ""
+    for line in lines:
+        texto += line
+    return texto

@@ -10,4 +10,3 @@ fimse
 se
 entao
 fimpara
-para
