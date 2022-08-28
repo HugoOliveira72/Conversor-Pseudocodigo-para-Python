@@ -1,6 +1,4 @@
 
-from cgitb import text
-from distutils import text_file
 from Operations.fileActions import convertToText, readFileLines
 
 
@@ -9,9 +7,6 @@ class loopingConverters:
         self.command = "para "
         self.textLines = readFileLines("","saida")
         self.text = ""
-
-        print('lau')
-        # self.text = texto
 
     def forConverter(self):
         lineCounter = 0
@@ -24,13 +19,14 @@ class loopingConverters:
             
 
         index1 = self.text.find("para ") + len("para ")
-        Variavel_Contador = self.text[index1]
         index2 = self.text.find("de ") + len("de ")
-        De = self.text[index2]
         index3 = self.text.find("ate ") + len("ate ")
-        Ate = self.text[index3]
         index4 = self.text.find("passo ") + len("passo ")
-        Passo = self.text[index4]
+
+        Variavel_Contador = self.text[index1:self.text.find("de")-1]
+        De = self.text[index2:self.text.find("ate")-1]
+        Ate = self.text[index3:self.text.find("passo")-1]
+        Passo = self.text[index4:self.text.find("faca")-1]
 
         for_ = "for @contador in range(@de,  @ate,  @passo)"
         self.text = for_.replace("@contador", Variavel_Contador)
@@ -38,6 +34,6 @@ class loopingConverters:
         self.text = self.text.replace("@ate", Ate)
         self.text = self.text.replace("@passo", Passo)
 
-        self.textLines[lineCounter] = self.text
+        self.textLines[lineCounter] = self.text+"\n"
         return convertToText(self.textLines)
         
