@@ -5,8 +5,8 @@ print("
 print(end=""+"
 print(end=""+
 elif
-else
 
 if
+else
 :
 

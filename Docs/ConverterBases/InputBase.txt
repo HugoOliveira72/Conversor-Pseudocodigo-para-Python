@@ -5,8 +5,8 @@ escreval("
 escreva("
 escreva(
 senao se
-senao
 fimse
 se
+ifnao
 entao
 fimpara
