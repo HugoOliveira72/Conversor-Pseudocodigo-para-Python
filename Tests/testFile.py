@@ -26,3 +26,4 @@ a = "para i de 100 ate 500 passo 10 faca:"
 
 print(a[5:7])
 print(a[3:])
+print(a[:-1])

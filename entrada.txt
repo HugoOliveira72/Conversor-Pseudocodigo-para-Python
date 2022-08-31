@@ -1,6 +1,6 @@
 a <- 29
 se a = 0 entao
-   escreva("a é 0 senao se")
+   escreva("a é 0 ---")
 senao se a = 29 entao
    escreva("a é 2")
 senao
