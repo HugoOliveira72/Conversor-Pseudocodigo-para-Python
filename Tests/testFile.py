@@ -24,6 +24,18 @@
 
 a = "para i de 100 ate 500 passo 10 faca:"
 
-print(a[5:7])
-print(a[3:])
-print(a[:-1])
+# print(a[5:7])
+# print(a[3:])
+# print(a[:-1])
+
+a = 0
+# while a < 10:
+#     a += 1
+#     print(a)
+
+a = "_vitor_"
+a.find("v")
+b = 'escreval("gay")'
+print(b.rfind('"'))
+
+index1 = b.find('"')

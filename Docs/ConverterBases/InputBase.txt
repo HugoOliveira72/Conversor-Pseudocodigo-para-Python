@@ -10,3 +10,6 @@ se
 ifnao
 entao
 fimpara
+fimenquanto
+enquanto
+faca

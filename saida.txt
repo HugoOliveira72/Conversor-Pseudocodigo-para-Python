@@ -4,8 +4,12 @@ if a == 0 :
 elif a == 29 :
    print(end=""+"a Ã© 2")
 else
-   print(end=""+"a Ã© diferente de qualquer valor")
+   print(end=""+"a Ã©  de qualquer valor")
 
 
-for i in range(100, 500, 10)
+for i in range(100, 500, 10):
    print(i)
+
+
+while a < 10 :
+   print(end=""+12)
