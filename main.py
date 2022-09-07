@@ -1,9 +1,6 @@
 from Operations.convertCommand import convertWord
 from Operations.fileActions import *
 
-def converter():
-
-    # texto = readFile("","entrada")
-    convertWord()
-
-converter()
+class Main:
+    def __init__(self):
+        convertWord()

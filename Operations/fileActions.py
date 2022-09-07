@@ -2,7 +2,7 @@ from importlib.metadata import files
 
 
 def readFile(path,filename):
-    with open(f"{path}{filename}.txt", "r", encoding="UTF-8") as file:
+    with open(f"{path}/{filename}.txt", "r", encoding="UTF-8") as file:
         return file.read()
 
 def replaceFile(text, find, change):
@@ -13,7 +13,7 @@ def writeExitFile(text):
         file.write(text)
     
 def writeFile(text, path, filename):
-    with open(f"{path}/{filename}","w", encoding="UTF-8") as file:
+    with open(f"{path}/{filename}.txt","w", encoding="UTF-8") as file:
         file.write(text)
 
 def readFileLines(path,filename):

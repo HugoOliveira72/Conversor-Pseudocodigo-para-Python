@@ -1,15 +1,17 @@
 from tkinter import *
 from tkinter.messagebox import showinfo
 
-from matplotlib.pyplot import text
-import main
+# from matplotlib.pyplot import text
+from Operations.fileActions import *
+from main import Main
 
 
 def Converter_Clicked():
     texto2.delete("1.0","end")
-    main.gravarArquivo(texto1.get("1.0",'end-1c'))
-    main.Conveter()
-    texto2.insert(INSERT, main.readFile())
+    writeFile(texto1.get("1.0",'end-1c'),"Docs/Files","entrada")
+    mainClass = Main()
+    outputFile = readFile("Docs/Files","saida")
+    texto2.insert(INSERT, outputFile)
     showinfo(title='Conversor',message='Convertido')
 
 janela = Tk()

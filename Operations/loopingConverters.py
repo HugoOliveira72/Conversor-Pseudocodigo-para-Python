@@ -19,8 +19,10 @@ class loopingConverters:
             if line.find("para") != -1:
                 self.text = removeNBar(line)
                 break
-            lineCounter += 1
-
+            else:
+                lineCounter += 1
+                return
+            
         For = Para()
         for parameter in For.atributes:
             forCounter += 1
