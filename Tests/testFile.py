@@ -33,9 +33,15 @@ a = 0
 #     a += 1
 #     print(a)
 
-a = "_vitor_"
-a.find("v")
-b = 'escreval("gay")'
-print(b.rfind('"'))
+# a = "_vitor_"
+# a.find("v")
+# b = 'escreval("gay")'
+# print(b.rfind('"'))
 
-index1 = b.find('"')
+# index1 = b.find('"')
+
+# a = 'de'
+# print(a[:-1])
+
+for i in range(1, 10,):
+    print(i)

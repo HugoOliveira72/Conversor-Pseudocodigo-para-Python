@@ -28,12 +28,22 @@ class loopingConverters:
             for parameter in For.atributes:
                 forAtrCounter += 1
         
-                index = actualForLine.find(parameter) + len(parameter)
+                indexFoundedParameter = actualForLine.find(parameter)
+                lenOfParameter = len(parameter)
+                if indexFoundedParameter != -1:
+                    index = indexFoundedParameter + lenOfParameter
+                else :
+                    index = value
 
                 if forAtrCounter < For.ForLen:
                     actual_value = For.atributes[forAtrCounter]
-                    value = actualForLine.find(actual_value[:-1])
-                    variable = actualForLine[index+1:value-1]
+                    value = actualForLine.find(actual_value)
+                    if value != -1:
+                        variable = actualForLine[index+1:value-1]
+                    else:
+                        value = actualForLine.find(For.atributes[forAtrCounter+1])
+                        variable = actualForLine[index+1:value-1]
+            
                 
                 if forAtrCounter == 1:
                     self.forBase = self.forBase.replace(f"@contador",variable)

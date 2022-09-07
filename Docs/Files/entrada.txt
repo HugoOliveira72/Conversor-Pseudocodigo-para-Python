@@ -1,23 +1,9 @@
-para i de 1 ate 10 passo 10 faca:
-   escreva(a)
-fimpara
-
-para i de 1 ate 10 passo 10 faca:
-   escreva(a)
-fimpara
-
-para i de 1 ate 10 passo 10 faca:
-   escreva(a)
-fimpara
-
-para i de 1 ate 10 passo 10 faca:
-   escreva(a)
-fimpara
-
-para i de 1 ate 10 passo 10 faca:
-   escreva(a)
-fimpara
-
-enquanto i < 2 faca:
-   escreva(a)
+a <- 0
+enquanto a < 10 faca
+  escreval(a)
+  a <- a + 1
 fimenquanto
+
+para i de 1 ate 10 faca
+     escreva(i)
+fimpara
