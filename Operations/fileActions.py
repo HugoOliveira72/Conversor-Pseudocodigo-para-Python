@@ -6,7 +6,7 @@ def replaceFile(text, find, change):
     return text.replace(find,change)
 
 def writeFile(text):
-    with open("saida.txt", "w", encoding="UTF-8") as file:
+    with open("Docs/Files/saida.txt", "w", encoding="UTF-8") as file:
         file.write(text)
 
 def readFileLines(path,filename):

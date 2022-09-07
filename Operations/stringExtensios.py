@@ -1,6 +1,4 @@
 # from Operations.convertCommand import separateWords
-from Operations.fileActions import readFileLines
-
 
 def removeNBar(input):
     return input.replace("\n","")

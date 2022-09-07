@@ -2,14 +2,14 @@ from tkinter import *
 from tkinter.messagebox import showinfo
 
 from matplotlib.pyplot import text
-import funcoes
+import main
 
 
 def Converter_Clicked():
     texto2.delete("1.0","end")
-    funcoes.gravarArquivo(texto1.get("1.0",'end-1c'))
-    funcoes.Conveter()
-    texto2.insert(INSERT, funcoes.readFile())
+    main.gravarArquivo(texto1.get("1.0",'end-1c'))
+    main.Conveter()
+    texto2.insert(INSERT, main.readFile())
     showinfo(title='Conversor',message='Convertido')
 
 janela = Tk()

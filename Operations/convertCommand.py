@@ -2,13 +2,14 @@ from Operations.fileActions import readFileLines, replaceFile, writeFile
 from Operations.loopingConverters import loopingConverters
 from Operations.stringExtensios import *
 
-def convertWord(texto):
+def convertWord():
     
     inputLines = readFileLines("Docs/ConverterBases/","InputBase")
     outputLines = readFileLines("Docs/ConverterBases/","OutputBase")
 
     LoopingObject = loopingConverters()
     text = LoopingObject.forConverter()
+    
     writeFile(text)
 
     for i in range(0, len(inputLines)):
@@ -17,5 +18,4 @@ def convertWord(texto):
         text = replaceFile(text, find, change)
 
     writeFile(text)
-        
     

@@ -12,4 +12,4 @@ para i de 100 ate 500 passo 10 faca:
 fimpara
 
 enquanto a < 10 faca:
-   escreva(12)
+   escreval("Não consigo lernada")

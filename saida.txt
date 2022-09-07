@@ -1,15 +1,15 @@
-a = 29
-if a == 0 :
-   print(end=""+"a Ã© 0 ---")
-elif a == 29 :
-   print(end=""+"a Ã© 2")
-else
-   print(end=""+"a Ã©  de qualquer valor")
-
+a <- 29
+se a = 0 entao
+   escreva("a Ã© 0 ---")
+senao se a = 29 entao
+   escreva("a Ã© 2")
+senao
+   escreva("a Ã©  de qualquer valor")
+fimse
 
 for i in range(100, 500, 10):
-   print(i)
+   escreval(i)
+fimpara
 
-
-while a < 10 :
-   print(end=""+12)
+enquanto a < 10 faca:
+   escreval("NÃ£o consigo lernada")
