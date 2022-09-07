@@ -1,3 +1,6 @@
+from importlib.metadata import files
+
+
 def readFile(path,filename):
     with open(f"{path}{filename}.txt", "r", encoding="UTF-8") as file:
         return file.read()
@@ -5,8 +8,12 @@ def readFile(path,filename):
 def replaceFile(text, find, change):
     return text.replace(find,change)
 
-def writeFile(text):
+def writeExitFile(text):
     with open("Docs/Files/saida.txt", "w", encoding="UTF-8") as file:
+        file.write(text)
+    
+def writeFile(text, path, filename):
+    with open(f"{path}/{filename}","w", encoding="UTF-8") as file:
         file.write(text)
 
 def readFileLines(path,filename):
