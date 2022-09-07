@@ -2,19 +2,19 @@ for i in range(1, 10, 10):
    print(end=""+a)
 
 
-para i de 1 ate 10 passo 10 :
+for i in range(1, 10, 10):
    print(end=""+a)
 
 
-para i de 1 ate 10 passo 10 :
+for i in range(1, 10, 10):
    print(end=""+a)
 
 
-para i de 1 ate 10 passo 10 :
+for i in range(1, 10, 10):
    print(end=""+a)
 
 
-para i de 1 ate 10 passo 10 :
+for i in range(1, 10, 10):
    print(end=""+a)
 
 
