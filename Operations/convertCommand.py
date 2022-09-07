@@ -1,4 +1,5 @@
-from Operations.fileActions import readFileLines, replaceFile, writeFile
+from distutils import text_file
+from Operations.fileActions import *
 from Operations.loopingConverters import loopingConverters
 from Operations.stringExtensios import *
 
@@ -10,12 +11,13 @@ def convertWord():
     LoopingObject = loopingConverters()
     text = LoopingObject.forConverter()
     
-    writeFile(text)
+    writeExitFile(text)
 
     for i in range(0, len(inputLines)):
         find = removeNBar(inputLines[i])
         change = removeNBar(outputLines[i])
         text = replaceFile(text, find, change)
 
-    writeFile(text)
+    writeExitFile(text)
+
     
