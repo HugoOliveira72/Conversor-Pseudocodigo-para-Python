@@ -1,9 +1,3 @@
-a <- 0
-enquanto a < 10 faca
-  escreval(a)
-  a <- a + 1
-fimenquanto
+if "vitor" != "juca" :
+   print(end=""+"Gordo eh que da o cu")
 
-para i de 1 ate 10 faca
-     escreva(i)
-fimpara

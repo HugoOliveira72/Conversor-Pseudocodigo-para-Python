@@ -1,5 +1,6 @@
 =
 <-
+<>
 escreval(
 escreval("
 escreva("
