@@ -1,3 +1,8 @@
-if "vitor" != "juca" :
-   print(end=""+"Gordo eh que da o cu")
+escreval("ola mundo")
+
+se a < 2 entao
+  escreval("a menor 2")
+senao
+  escreval("a maior ou igual a 2")
+fimse
 
