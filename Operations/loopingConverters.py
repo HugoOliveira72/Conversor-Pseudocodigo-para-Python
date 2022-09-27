@@ -30,6 +30,7 @@ class loopingConverters:
         
                 indexFoundedParameter = actualForLine.find(parameter)
                 lenOfParameter = len(parameter)
+                
                 if indexFoundedParameter != -1:
                     index = indexFoundedParameter + lenOfParameter
                 else :
