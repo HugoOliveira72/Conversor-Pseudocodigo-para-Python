@@ -1,15 +1,11 @@
-a <- 2
+escreval("Para1")
 
-escreval("ola mundo")
+para i de 1 ate 10 faca
+  escreval(i)
+fimpara
 
-se a > 2 entao
-  escreval("a menor que 2")
-senao se a = 2
-  escreval("a igual a 2")
-senao
-  escreval("a menor que 2")
-fimse
+escreval("Para2")
 
-para i de 1 ate 10 passo 1 faca
+para i de 2 ate 20 passo 2 faca
   escreval(i)
 fimpara

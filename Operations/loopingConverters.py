@@ -8,7 +8,7 @@ class loopingConverters:
     def __init__(self):
         self.command = "para "
         self.textLines = readFileLines("Docs/Files/","entrada")
-        self.forBase = "for @contador in range(@de, @ate, @passo):"
+        self.forBase = ""
         self.forLines = []
 
     def forConverter(self):
@@ -25,6 +25,8 @@ class loopingConverters:
             
         For = Para()
         for actualForLine in self.forLines:
+            forAtrCounter = 0
+            self.forBase = "for @contador in range(@de, @ate, @passo):"
             for parameter in For.atributes:
                 forAtrCounter += 1
         

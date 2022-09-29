@@ -43,5 +43,8 @@ a = 0
 # a = 'de'
 # print(a[:-1])
 
-for i in range(1, 10,):
+for i in range(1, 10, 1):
     print(i)
+
+estado = input()
+
