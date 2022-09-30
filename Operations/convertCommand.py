@@ -2,15 +2,15 @@ from asyncio.windows_events import NULL
 from distutils import text_file
 from queue import Empty
 from Operations.fileActions import *
-from Operations.loopingConverters import loopingConverters
-from Operations.stringExtensios import *
+from Operations.loopingConverters import LoopingConverter, loopingConverters
+from Operations.stringExtensions import *
 
 def convertWord():
     
     inputLines = readFileLines("Docs/ConverterBases/","InputBase")
     outputLines = readFileLines("Docs/ConverterBases/","OutputBase")
 
-    LoopingObject = loopingConverters()
+    LoopingObject = LoopingConverter()
     text = LoopingObject.forConverter()
     
     if text is not None:
