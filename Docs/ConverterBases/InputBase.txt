@@ -1,16 +1,33 @@
 =
 <-
 <>
+ : inteiro
+: inteiro
+:inteiro:
+ : real
+: real
+:real
+ : caractere
+: caractere
+:caractere
+se
+ifnao
+senao se
+ : logico
+: logico
+:logico
+verdadeiro
+falso
 escreval(
 escreval("
 escreva("
 escreva(
-senao se
 fimse
-se
-ifnao
 entao
 fimpara
 fimenquanto
 enquanto
 faca
+var
+inicio
+fimalgoritmo

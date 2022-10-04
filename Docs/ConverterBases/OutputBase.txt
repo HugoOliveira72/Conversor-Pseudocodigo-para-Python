@@ -1,16 +1,33 @@
 ==
 =
 !=
+ = 0
+ = 0
+ = 0
+ = 0.0
+ = 0.0
+ = 0.0
+ = ''
+ = ''
+ = ''
+if
+else
+elif
+ = false
+ = false
+ = false
+true
+false
 print(
 print("
 print(end=""+"
 print(end=""+
-elif
 
-if
-else
 :
 
 
 while
+    
+
+
 

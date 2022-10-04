@@ -1,10 +1,18 @@
-fprint("Para1")
 
-for i in range(1, 10, ):
-  print(i)
+   VA, VB, aux = 0
+   a = false
+   
 
+   print(end=""+"Digite o valor de VA: ")
+   leia(VA)
 
-print("Para2")
+   print(end=""+"Digite o valor de VB: ")
+   leia(VB)
 
-for i in range(2, 20, 2):
-  print(i)
+   aux = VA
+   VA = VB
+   VB = aux
+   a = true
+
+   print("Valor atual de VA", VA)
+   print("Valor atual de VB", VB)

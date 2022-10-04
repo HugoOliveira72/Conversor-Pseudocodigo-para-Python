@@ -4,6 +4,7 @@ from Operations.fileActions import convertToText, readFileLines
 from Operations.stringExtensions import removeNBar
 
 def identifyLoopQuantity(self):
+    lineCounter = 0
     for line in self.textLines:
         if line.find(self.command) != -1:
             self.forLines.append(removeNBar(line))
@@ -13,10 +14,11 @@ def identifyLoopQuantity(self):
 class LoopingConverter:
     def __init__(self):
         self.textLines = readFileLines("Docs/Files/","entrada")
+
+        # FOR
         self.forBase = ""
         self.forLines = []
-        forLineNumbers = []
-
+        self.forLineNumbers = []
 
     def forConverter(self):
         self.command = "para "
@@ -24,7 +26,7 @@ class LoopingConverter:
         forCounter = 0
         For = Para()
 
-        identifyLoopQuantity()
+        identifyLoopQuantity(self)
             
         for actualForLine in self.forLines:
             forAtrCounter = 0
@@ -32,7 +34,6 @@ class LoopingConverter:
 
             for parameter in For.atributes:
                 forAtrCounter += 1
-        
                 
                 firstPositionParameterOne = actualForLine.find(parameter)
                 lenOfParameter = len(parameter)
@@ -41,10 +42,12 @@ class LoopingConverter:
                 firstPositionParameterOne = firstPositionParameterOne + lenOfParameter if firstPositionParameterOne != -1 else firstPositionParamterTwo 
 
                 if forAtrCounter < For.ForLen:
-
+                    
+                    # Receber index da primeira posição do parametro 2
                     currentAttribute = For.atributes[forAtrCounter]
                     firstPositionParamterTwo = actualForLine.find(currentAttribute)
 
+                    # Atribuição dos valores a uma variavel
                     if firstPositionParamterTwo != -1:
                         variable = actualForLine[firstPositionParameterOne+1:firstPositionParamterTwo-1]
                     else:
@@ -52,6 +55,7 @@ class LoopingConverter:
                         variable = actualForLine[firstPositionParameterOne+1:firstPositionParamterTwo-1]
             
                 
+                # Substituição no arquivo
                 if forAtrCounter == 1:
                     self.forBase = self.forBase.replace(f"@contador",variable)
                 else:

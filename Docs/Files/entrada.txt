@@ -1,11 +1,19 @@
-fescreval("Para1")
+var
+   VA, VB, aux : inteiro
+   a : logico
+   
+inicio
+   escreva("Digite o valor de VA: ")
+   leia(VA)
 
-para i de 1 ate 10 faca
-  escreval(i)
-fimpara
+   escreva("Digite o valor de VB: ")
+   leia(VB)
 
-escreval("Para2")
+   aux <- VA
+   VA <- VB
+   VB <- aux
+   a <- verdadeiro
 
-para i de 2 ate 20 passo 2 faca
-  escreval(i)
-fimpara
+   escreval("Valor atual de VA", VA)
+   escreval("Valor atual de VB", VB)
+fimalgoritmo
