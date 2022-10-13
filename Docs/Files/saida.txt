@@ -1,18 +1,1 @@
-
-   VA, VB, aux = 0
-   a = false
-   
-
-   print(end=""+"Digite o valor de VA: ")
-   leia(VA)
-
-   print(end=""+"Digite o valor de VB: ")
-   leia(VB)
-
-   aux = VA
-   VA = VB
-   VB = aux
-   a = true
-
-   print("Valor atual de VA", VA)
-   print("Valor atual de VB", VB)
+print()
