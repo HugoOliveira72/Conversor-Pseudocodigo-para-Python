@@ -1,4 +1,5 @@
 from cgitb import text
+from ctypes.wintypes import RGB
 from tkinter import *
 from tkinter.messagebox import showinfo
 from tkinter.tix import LabelEntry
@@ -23,6 +24,7 @@ class Aplicacao(Funcoes):
         self.frames()
         self.entradas()
         self.botoes()
+        self.labels()
         self.root.mainloop()
 
     def tela(self):
@@ -54,5 +56,11 @@ class Aplicacao(Funcoes):
     def botoes(self):
         self.botaoConverter = Button(root, text="Converter", command=self.converter)
         self.botaoConverter.place(relx=0.46, rely=0.87, relwidth=0.05, relheight=0.05)
+
+    def labels(self):
+        self.labe1 = Label(text="Visualg - Pseudocodigo")
+        self.labe1.place(relx=0.25, rely=0.06, relwidth=0.11, relheight=0.05)
+        self.labe2 = Label(text="Python")
+        self.labe2.place(relx=0.58, rely=0.06, relwidth=0.11, relheight=0.05)
 
 Aplicacao()

@@ -1,4 +1,4 @@
-frase = "leia(variavel) \n escrval(\"Voce apertiou algo\")"
+frase = "leia(variavel) \n escreval(\"Voce apertiou algo\")"
 variavel = ""
 nova_frase = frase.replace("leia(", "")
 leia = True
