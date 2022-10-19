@@ -10,6 +10,7 @@
  : caractere
 : caractere
 :caractere
+fimse
 se
 ifnao
 senao se
@@ -22,7 +23,6 @@ escreval(
 escreval("
 escreva("
 escreva(
-fimse
 entao
 fimpara
 fimenquanto
