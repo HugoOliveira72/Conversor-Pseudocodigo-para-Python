@@ -1,5 +1,1 @@
-print("salve")
-
-print("")
-
-
+print("fimpara")
