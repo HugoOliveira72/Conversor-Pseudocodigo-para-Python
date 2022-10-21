@@ -18,6 +18,8 @@ def convertWord():
     else:
         text = readFile("Docs/Files","entrada")
 
+    
+
     for i in range(0, len(inputLines)):
         find = removeNBar(inputLines[i])
         change = removeNBar(outputLines[i])
