@@ -11,6 +11,12 @@ def replaceFile(text, find, change):
 def writeExitFile(text):
     with open("Docs/Files/saida.txt", "w", encoding="UTF-8") as file:
         file.write(text)
+
+def writeStringListExitFile(lines):
+    text = ''
+    for line in lines:
+        text += line
+    writeExitFile(text)
     
 def writeFile(text, path, filename):
     with open(f"{path}/{filename}.txt","w", encoding="UTF-8") as file:

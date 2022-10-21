@@ -18,13 +18,15 @@ def convertWord():
     else:
         text = readFile("Docs/Files","entrada")
 
-    
+    textLines = readFileLines("Docs/Files/","entrada")
 
-    for i in range(0, len(inputLines)):
-        find = removeNBar(inputLines[i])
-        change = removeNBar(outputLines[i])
-        text = replaceFile(text, find, change)
+    for j in range(0,len(textLines)):
+        for i in range(0, len(inputLines)):
+            find = removeNBar(inputLines[i])
+            change = removeNBar(outputLines[i])
+            textLines[j] = replaceFile(textLines[j], find, change)
 
-    writeExitFile(text)
+
+    writeStringListExitFile(textLines)
 
     
