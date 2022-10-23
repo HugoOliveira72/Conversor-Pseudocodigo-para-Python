@@ -43,7 +43,34 @@ a = 0
 # a = 'de'
 # print(a[:-1])
 
-for i in range(1, 10, 1):
-    print(i)
+# for i in range(1, 10, 1):
+#     print(i)
 
-estado = input()
+# estado = input()
+
+matriz = []
+matriz = [0,0,0],[0,0,0]
+# matriz = [[1,2,3],[4,5,6]]
+
+# frase = "matriz:vetor[1..3,1..4] de inteiro"
+
+print('Insira valores para a matriz')
+for i in range(0,2):
+    for j in range(0,3):
+        # a = input('Valor: ')
+        # matriz[i][j] =
+        matriz[i][j] = input('')
+        # print(matriz[i][j],end=" ")
+
+for i in range(0,2):
+    for j in range(0,3):
+        print(matriz[i][j],end=" ")
+    print('')
+
+
+# =========================================================
+
+# vetor = [0,0]
+
+# for i in range(0,2):
+#     vetor[i] = input()

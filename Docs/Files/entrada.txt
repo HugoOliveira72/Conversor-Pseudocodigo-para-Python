@@ -1,2 +1,1 @@
-leia(a)
-escreval("fimpara")
+Mat: vetor[1..2, 1..3] de inteiro
