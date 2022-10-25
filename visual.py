@@ -30,19 +30,20 @@ class Aplicacao(Funcoes):
     def tela(self):
         self.root.title("Conversor pseudocodigo")
         self.root.configure(background="#EEE4AB")
-        self.root.geometry("1366x768")
         self.root.resizable(True, True)
+        self.root.attributes("-fullscreen", False)
         self.root.maxsize = "1920x1080"
         self.root.minsizev = "720x480"
+        self.root.geometry(self.root.maxsize)
 
     def frames(self):
         self.frame1 = Frame(self.root, bd=4, bg="#99C4C8",
                             highlightbackground="#68A7AD", highlightthickness=3)
-        self.frame1.place(relx=0.14, rely=0.13, relwidth=0.3, relheight=0.68)
+        self.frame1.place(relx=0.079, rely=0.13, relwidth=0.3, relheight=0.6)
 
         self.frame2 = Frame(self.root, bd=4, bg="#99C4C8",
                             highlightbackground="#68A7AD", highlightthickness=3)
-        self.frame2.place(relx=0.5, rely=0.13, relwidth=0.3, relheight=0.68)
+        self.frame2.place(relx=0.5, rely=0.13, relwidth=0.3, relheight=0.6)
 
     def entradas(self):
         self.entradaTexto1 = Text(self.frame1, font="Courier")

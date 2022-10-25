@@ -28,6 +28,5 @@ fimpara
 fimenquanto
 enquanto
 faca
-var
 inicio
 fimalgoritmo

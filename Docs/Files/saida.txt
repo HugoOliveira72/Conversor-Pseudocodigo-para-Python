@@ -1,1 +1,17 @@
-Mat: [0,0], [0,0,0]
+def soma(a,b):
+var
+
+
+print(a+b)
+fimfuncao
+
+
+algoritmo "A11Ex03"
+var
+variable1, variable2 = 0
+
+
+variable1 == input()
+variable2 == input()
+soma(variable1,variable2)
+

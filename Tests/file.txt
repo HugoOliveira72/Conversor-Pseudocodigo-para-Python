@@ -1,9 +1,9 @@
-funcao soma(a,b: inteiro):inteiro
+procedimento soma(a,b: inteiro)
 var
 
 inicio
    escreval(a+b)
-fimfuncao
+fimprocedimento
 
 
 algoritmo "A11Ex03"
