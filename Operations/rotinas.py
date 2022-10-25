@@ -12,13 +12,14 @@ def validarFuncao(frase):
 def rotinas(frase):
     nomeSubRotina = ""
     nova_frase = ""
+    parametros = ""
+    achouParatenses = False
+    parametrosProc = []
+    
     if(frase.find("procedimento") != -1):
         nova_frase = frase.replace("procedimento", "")
     else:
         nova_frase = frase.replace("funcao", "")
-    parametros = ""
-    achouParatenses = False
-    parametrosProc = []
 
     # Separar NomeSubRotina e Parametros
     for i in nova_frase:

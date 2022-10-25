@@ -1,5 +1,5 @@
 def soma(a,b):
-var
+
 
 
 print(a+b)
@@ -7,7 +7,7 @@ print(a+b)
 
 
 algoritmo "A11Ex03"
-var
+
 variable1, variable2 = 0
 
 

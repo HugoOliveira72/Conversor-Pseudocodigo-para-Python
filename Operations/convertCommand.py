@@ -6,6 +6,7 @@ from Operations.rotinas import rotinas, validarFuncao
 from Operations.read import convertInput
 from Operations.stringExtensions import *
 from Operations.vetores import convertVetores
+from Operations.var import *
 
 def convertWord():
     
@@ -27,6 +28,9 @@ def convertWord():
     # GENERAL
     for j in range(0,len(textLines)):
         
+        # VAR
+        textLines[j] = var(textLines[j])
+
         # Funcoes
         if (validarFuncao(textLines[j])):
             textLines[j] = rotinas(textLines[j])
@@ -41,7 +45,6 @@ def convertWord():
 
         # Aplicar regra das aspas
         textLines[j], currentParameter = fixMarks(textLines[j])
-
         # CONVERSÃO
         for i in range(0, len(inputLines)):
 
