@@ -3,7 +3,7 @@ var
 
 
 print(a+b)
-fimfuncao
+
 
 
 algoritmo "A11Ex03"

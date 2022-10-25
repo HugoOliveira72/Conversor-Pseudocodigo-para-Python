@@ -10,6 +10,8 @@
  : caractere
 : caractere
 :caractere
+fimfuncao
+fimprocedimento
 fimse
 se
 ifnao
