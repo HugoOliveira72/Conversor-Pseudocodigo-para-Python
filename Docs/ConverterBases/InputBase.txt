@@ -1,6 +1,7 @@
 =
 <-
 <>
+//
  : inteiro
 : inteiro
 :inteiro:
@@ -32,4 +33,4 @@ enquanto
 faca
 inicio
 fimalgoritmo
-algoritmo "
+algoritmo

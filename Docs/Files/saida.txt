@@ -1,1 +1,23 @@
-volume = floor(4.6)
+# algoritmo  "MediaNotas"
+# FunÃ§Ã£o: Calcular a mÃ©dia ponderada de trÃªs notas de # algoritmo s
+# Autores:  Antonello
+
+
+NProva, NExer, NTrab, media = 0.0
+
+
+print(end=""+"Nota da prova: ")
+NProva == input()
+
+print(end=""+"Nota dos exercÃ­cios: ")
+NExer == input()
+
+print(end=""+"Nota do trabalho: ")
+NTrab == input()
+
+media = (NProva * 70 + NExer * 20 + NTrab * 10) / 100
+
+print(end=""+"A nota mÃ©dia Ã©", media)
+
+
+

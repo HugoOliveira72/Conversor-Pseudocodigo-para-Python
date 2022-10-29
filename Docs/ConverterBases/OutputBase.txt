@@ -1,6 +1,7 @@
 ==
 =
 !=
+#
  = 0
  = 0
  = 0
@@ -32,4 +33,4 @@ while
     
 
 
-# Algoritmo "
+# algoritmo 
