@@ -35,6 +35,10 @@ def convertWord():
 
         # Funcoes Matemáticas
         textLines[j] = converterMath(textLines[j])
+        if j == 0:
+            textLines.insert(0,"import math\n")
+            textLines.insert(1,"\n")
+
 
         # Funcoes
         if (validarFuncao(textLines[j])):
