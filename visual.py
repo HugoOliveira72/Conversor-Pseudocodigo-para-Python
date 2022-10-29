@@ -39,11 +39,11 @@ class Aplicacao(Funcoes):
     def frames(self):
         self.frame1 = Frame(self.root, bd=4, bg="#99C4C8",
                             highlightbackground="#68A7AD", highlightthickness=3)
-        self.frame1.place(relx=0.079, rely=0.13, relwidth=0.3, relheight=0.6)
+        self.frame1.place(relx=0.079, rely=0.13, relwidth=0.4, relheight=0.7)
 
         self.frame2 = Frame(self.root, bd=4, bg="#99C4C8",
                             highlightbackground="#68A7AD", highlightthickness=3)
-        self.frame2.place(relx=0.5, rely=0.13, relwidth=0.3, relheight=0.6)
+        self.frame2.place(relx=0.5, rely=0.13, relwidth=0.4, relheight=0.7)
 
     def entradas(self):
         self.entradaTexto1 = Text(self.frame1, font="Courier")
