@@ -1,17 +1,1 @@
-funcao soma(a,b: inteiro):inteiro
-var
-
-inicio
-   escreval(a+b)
-fimfuncao
-
-
-algoritmo "A11Ex03"
-var
-   variable1, variable2: inteiro
-
-inicio
-   leia(variable1)
-   leia(variable2)
-   soma(variable1,variable2)
-fimalgoritmo
+volume <- Abs(4.6)

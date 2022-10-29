@@ -1,0 +1,8 @@
+floor(
+cos
+int
+log
+** 2
+isqrt
+sen
+tan

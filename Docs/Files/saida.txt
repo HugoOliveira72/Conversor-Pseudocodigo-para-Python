@@ -1,17 +1,1 @@
-def soma(a,b):
-
-
-
-print(a+b)
-
-
-
-algoritmo "A11Ex03"
-
-variable1, variable2 = 0
-
-
-variable1 == input()
-variable2 == input()
-soma(variable1,variable2)
-
+volume = floor(4.6)

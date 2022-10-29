@@ -2,34 +2,39 @@ from unittest import TextTestResult
 from Operations.fileActions import *
 from Operations.loopingConverters import LoopingConverter
 from Operations.marks import fixMarks
+from Operations.math import converterMath
 from Operations.rotinas import rotinas, validarFuncao
 from Operations.read import convertInput
 from Operations.stringExtensions import *
 from Operations.vetores import convertVetores
 from Operations.var import *
 
+
 def convertWord():
-    
-    inputLines = readFileLines("Docs/ConverterBases/","InputBase")
-    outputLines = readFileLines("Docs/ConverterBases/","OutputBase")
+
+    inputLines = readFileLines("Docs/ConverterBases/", "InputBase")
+    outputLines = readFileLines("Docs/ConverterBases/", "OutputBase")
 
     # FOR
     LoopingObject = LoopingConverter()
     text = LoopingObject.forConverter()
-    
+
     if text is not None:
         writeExitFile(text)
     else:
-        text = readFile("Docs/Files","entrada")
+        text = readFile("Docs/Files", "entrada")
 
-    textLines = readFileLines("Docs/Files/","entrada")
+    textLines = readFileLines("Docs/Files/", "entrada")
     currentParameter = ""
 
-    # GENERAL
-    for j in range(0,len(textLines)):
-        
+    # GERAL
+    for j in range(0, len(textLines)):
+
         # VAR
         textLines[j] = var(textLines[j])
+
+        # Funcoes Matemáticas
+        textLines[j] = converterMath(textLines[j])
 
         # Funcoes
         if (validarFuncao(textLines[j])):
@@ -45,17 +50,17 @@ def convertWord():
 
         # Aplicar regra das aspas
         textLines[j], currentParameter = fixMarks(textLines[j])
+
         # CONVERSÃO
         for i in range(0, len(inputLines)):
 
-            #Conversão geral pelos arquivos 
+            # Conversão geral pelos arquivos
             find = removeNBar(inputLines[i])
             change = removeNBar(outputLines[i])
             textLines[j] = replaceFile(textLines[j].strip()+"\n", find, change)
 
-        # Devolver conteudo 
-        textLines[j] = replaceFile(textLines[j],"@parametro",currentParameter)
+        # Devolver conteudo
+        textLines[j] = replaceFile(
+            textLines[j], "@parametro", currentParameter)
 
     writeStringListExitFile(textLines)
-
-    

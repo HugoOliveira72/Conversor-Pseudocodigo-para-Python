@@ -32,3 +32,4 @@ enquanto
 faca
 inicio
 fimalgoritmo
+algoritmo "
