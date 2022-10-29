@@ -1,6 +1,5 @@
 
 def validarFuncao(frase):
-    gersu = frase.find("fimprocedimento")
     if (frase.find("fimprocedimento") != -1 or frase.find("fimfuncao") != -1):
         return False
     elif (frase.find("procedimento") != -1 or frase.find("funcao") != -1):   
