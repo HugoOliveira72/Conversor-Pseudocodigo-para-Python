@@ -1,5 +1,3 @@
-from mimetypes import init
-from unittest import TextTestResult
 from Operations.fileActions import *
 from Operations.loopingConverters import LoopingConverter
 from Operations.marks import fixMarks
@@ -9,6 +7,7 @@ from Operations.read import convertInput
 from Operations.stringExtensions import *
 from Operations.vetores import convertVetores
 from Operations.var import *
+from Operations.escolha_caso import *
 
 
 def convertWord():
@@ -20,8 +19,9 @@ def convertWord():
     positionAteLine = 0
     positionRepeatLine = 0
     ateLine = ''
-    repeatLine = ''
     repeatCurrentText = ''
+    entered = 0
+    flag = False
 
     # FOR
     LoopingObject = LoopingConverter()
@@ -42,10 +42,10 @@ def convertWord():
         textLines[j] = var(textLines[j])
 
         # Funcoes Matemáticas
-        textLines[j] = converterMath(textLines[j])
-        if j == 0:
-            textLines.insert(0,"import math\n")
-            textLines.insert(1,"\n")
+        # textLines[j] = converterMath(textLines[j])
+        # if j == 0:
+        #     textLines.insert(0,"import math\n")
+        #     textLines.insert(1,"\n")
 
         # Funcoes
         if (validarFuncao(textLines[j])):
@@ -102,5 +102,14 @@ def convertWord():
                 initialPosition += 1
         elif lock:
             lines += textLines[j]
+
+        # Escolha - Caso
+        if textLines[j].find('escolha') != -1:
+            variable = textLines[j].replace('escolha','').strip()
+            textLines[j] = escolha(variable, textLines[j], flag)
+            entered = 1
+        elif entered != 0 and textLines[j].find('caso') != -1:
+            textLines[j] = escolha(variable, textLines[j], flag).strip()
+            flag = True
 
     writeStringListExitFile(textLines)

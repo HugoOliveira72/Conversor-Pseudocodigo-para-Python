@@ -1,4 +1,8 @@
-repita
-  escreval(i)
-  i <- i + 1
-ate (i < 10)
+escolha a
+  caso 10
+    escreval("a é 10")
+  caso 15
+    escreval("a é 15")
+  outrocaso
+    escreval("a nao eh nada")
+fimescolha

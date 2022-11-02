@@ -1,6 +1,5 @@
-import math
 
-repita
-print(i)
-  i <- i + 1
-ate (i < 10)
+if a ==  10:print("a Ã© 10")
+elif a ==  15:print("a Ã© 15")
+else:print("a nao eh nada")
+
