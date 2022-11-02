@@ -38,3 +38,15 @@ def convertToText(lines):
     for line in lines:
         texto += line
     return texto
+
+def convertToList(text):
+    lines = []
+    res = ''
+    for palavra in text:
+        if palavra != '\n':
+            res += palavra
+        else:
+            lines.append(res)
+            res = ''
+
+    return lines        

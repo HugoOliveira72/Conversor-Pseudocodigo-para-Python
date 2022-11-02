@@ -1,3 +1,4 @@
+from mimetypes import init
 from unittest import TextTestResult
 from Operations.fileActions import *
 from Operations.loopingConverters import LoopingConverter
@@ -14,6 +15,13 @@ def convertWord():
 
     inputLines = readFileLines("Docs/ConverterBases/", "InputBase")
     outputLines = readFileLines("Docs/ConverterBases/", "OutputBase")
+    lock = False
+    lines = ''
+    positionAteLine = 0
+    positionRepeatLine = 0
+    ateLine = ''
+    repeatLine = ''
+    repeatCurrentText = ''
 
     # FOR
     LoopingObject = LoopingConverter()
@@ -38,7 +46,6 @@ def convertWord():
         if j == 0:
             textLines.insert(0,"import math\n")
             textLines.insert(1,"\n")
-
 
         # Funcoes
         if (validarFuncao(textLines[j])):
@@ -66,5 +73,34 @@ def convertWord():
         # Devolver conteudo
         textLines[j] = replaceFile(
             textLines[j], "@parametro", currentParameter)
+
+        # Repita
+        if (textLines[j].find('repita') != -1):
+            repeatLine, positionRepeatLine = textLines[j], j
+            lock = True
+        elif (textLines[j].find('ate (') != -1):
+            # Chamar Repita e montar
+            ateLine, positionAteLine = textLines[j], j
+            repeatCurrentText = LoopingObject.repita(ateLine, lines)
+            repeatCurrentText = convertToList(repeatCurrentText)
+
+            # Remover linhas do repita
+            for i in range(positionAteLine, positionRepeatLine-1, -1):
+                del textLines[i]
+
+            initialPosition = positionRepeatLine
+            c = 0
+            # Ajustar Repita
+            for line in repeatCurrentText:
+                if line.find('while') != -1:
+                    c = initialPosition
+                    textLines.insert(initialPosition, line+'\n')
+                elif c != 0:
+                    textLines.insert(initialPosition, '   '+line+'\n')
+                else:
+                    textLines.insert(initialPosition, line+'\n')
+                initialPosition += 1
+        elif lock:
+            lines += textLines[j]
 
     writeStringListExitFile(textLines)

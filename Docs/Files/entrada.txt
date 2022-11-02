@@ -1,23 +1,4 @@
-algoritmo "MediaNotas"
-// Função: Calcular a média ponderada de três notas de algoritmos
-// Autores:  Antonello
-
-var
-   NProva, NExer, NTrab, media : real
-   
-inicio
-   escreva("Nota da prova: ")
-   leia(NProva)
-
-   escreva("Nota dos exercícios: ")
-   leia(NExer)
-
-   escreva("Nota do trabalho: ")
-   leia(NTrab)
-
-   media <- (NProva * 70 + NExer * 20 + NTrab * 10) / 100
-
-   escreva("A nota média é", media)
-fimalgoritmo
-
-
+repita
+  escreval(i)
+  i <- i + 1
+ate (i < 10)
