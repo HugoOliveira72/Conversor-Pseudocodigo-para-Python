@@ -12,6 +12,6 @@ def converterMath(texto):
     for i in range(0, len(InputMath)):
         find = removeNBar(InputMath[i])
         change = removeNBar(OutputMath[i])
-        result = replaceFile(result, find, mathName+change)
+        result = replaceFile(result, find, (mathName+change))
 
     return result

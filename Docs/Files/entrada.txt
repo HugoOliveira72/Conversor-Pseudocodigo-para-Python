@@ -1,1 +1,12 @@
-escreval("é sobre isso")
+algoritmo "Hello World!"
+
+var
+   c:real
+   b:real
+inicio
+  escreval("Hello World!")
+  b <- 49
+  c <- raizq( b )
+  escreval("c:",c)
+
+fimalgoritmo

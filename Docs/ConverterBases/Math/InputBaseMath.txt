@@ -1,8 +1,8 @@
-Abs(
-Cos
-Int
-Log
-Quad
-RaizQ 
-Sen
-Tan
+abs(
+vos
+int
+log
+quad
+raizq
+sen
+tan

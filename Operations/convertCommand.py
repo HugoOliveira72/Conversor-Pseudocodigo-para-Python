@@ -22,6 +22,8 @@ def convertWord():
     repeatCurrentText = ''
     entered = 0
     flag = False
+    mathFlag = 0
+    addAfterIndexMath = False
 
     # FOR
     LoopingObject = LoopingConverter()
@@ -41,11 +43,15 @@ def convertWord():
         # VAR
         textLines[j] = var(textLines[j])
 
-        # Funcoes Matemáticas
-        textLines[j] = converterMath(textLines[j])
-        if j == 0:
-            textLines.insert(0,"import math\n")
-            textLines.insert(1,"\n")
+        mathReturn = ""
+        mathReturn = converterMath(textLines[j])
+        
+        if mathFlag == 0 and mathReturn != textLines[j]:
+            textLines[j] = mathReturn
+            addAfterIndexMath = True
+            mathFlag += 1
+        elif mathFlag != 0:
+            textLines[j] = mathReturn
 
         # Funcoes
         if (validarFuncao(textLines[j])):
@@ -68,7 +74,7 @@ def convertWord():
             # Conversão geral pelos arquivos
             find = removeNBar(inputLines[i])
             change = removeNBar(outputLines[i])
-            textLines[j] = replaceFile(textLines[j].strip()+"\n", find, change)
+            textLines[j] = replaceFile(textLines[j].strip().lower()+"\n", find, change)
 
         # Devolver conteudo
         textLines[j] = replaceFile(
@@ -111,5 +117,10 @@ def convertWord():
         elif entered != 0 and textLines[j].find('caso') != -1:
             textLines[j] = escolha(variable, textLines[j], flag).strip()
             flag = True
+
+    #Import Math
+    if addAfterIndexMath:
+        textLines.insert(1,"import math\n")
+        textLines.insert(2,"\n")
 
     writeStringListExitFile(textLines)
