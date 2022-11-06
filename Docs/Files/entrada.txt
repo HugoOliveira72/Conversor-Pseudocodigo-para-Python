@@ -1,8 +1,1 @@
-escolha a
-  caso 10
-    escreval("a é 10")
-  caso 15
-    escreval("a é 15")
-  outrocaso
-    escreval("a nao eh nada")
-fimescolha
+escreval("é sobre isso")
