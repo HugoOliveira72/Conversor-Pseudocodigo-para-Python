@@ -28,7 +28,7 @@ def writeFile(text, path, filename):
 
 
 def readFileLines(path, filename):
-    file = open(f'{path}{filename}.txt')
+    file = open(f'{path}{filename}.txt',encoding='utf-8')
     lines = file.readlines()
     return lines
 
