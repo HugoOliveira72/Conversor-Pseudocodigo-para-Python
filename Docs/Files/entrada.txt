@@ -1,12 +1,12 @@
 algoritmo "Hello World!"
 
 var
-   c:real
-   b:real
+  a,b,x:inteiro
+  
 inicio
-  escreval("Hello World!")
-  b <- 49
-  c <- raizq( b )
-  escreval("c:",c)
+  leia(a)
+  leia(b)
+  x <- a + b
+  escreval("X =",x)
 
 fimalgoritmo

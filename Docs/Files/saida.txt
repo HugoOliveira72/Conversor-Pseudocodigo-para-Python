@@ -3,12 +3,12 @@ import math
 
 
 
-c = 0.0
-b = 0.0
+a,b,x:math.inteiro
 
-print("Hello World!")
-b = 49
-c = math.isqrt( b )
-print("c:",c)
+
+a= input()
+b= input()
+x = a + b
+print("X =",x)
 
 

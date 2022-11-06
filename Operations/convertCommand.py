@@ -63,7 +63,8 @@ def convertWord():
 
         # Conversão de inputs
         if (textLines[j].find("leia") != -1):
-            textLines[j] = convertInput(textLines[j])
+            textLines[j] = convertInput(textLines[j].strip()+'\n')
+            continue
 
         # Aplicar regra das aspas
         textLines[j], currentParameter = fixMarks(textLines[j])
