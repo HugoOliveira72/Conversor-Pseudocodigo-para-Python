@@ -4,7 +4,7 @@
 //
  : inteiro
 : inteiro
-:inteiro:
+:inteiro
  : real
 : real
 :real

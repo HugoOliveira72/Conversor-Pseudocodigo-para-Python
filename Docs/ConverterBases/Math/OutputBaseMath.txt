@@ -1,7 +1,6 @@
 floor(
 cos
-int
-log
+slog
 ** 2
 isqrt
 sen

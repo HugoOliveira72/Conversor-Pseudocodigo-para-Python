@@ -1,6 +1,5 @@
 abs(
 vos
-int
 log
 quad
 raizq

@@ -1,12 +1,18 @@
-algoritmo "Hello World!"
+Algoritmo "1005"
 
-var
-  a,b,x:inteiro
-  
-inicio
-  leia(a)
-  leia(b)
-  x <- a + b
-  escreval("X =",x)
+Var
+a:inteiro
+b:inteiro
 
-fimalgoritmo
+
+Inicio
+leia(a)
+leia(b)
+se (a mod b = 0) ou (b mod a = 0) entao
+  escreval("Sao Multiplos")
+senao
+  escreval("Nao sao Multiplos")
+fimse
+
+
+Fimalgoritmo

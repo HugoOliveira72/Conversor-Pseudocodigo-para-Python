@@ -1,14 +1,20 @@
-# algoritmo  "Hello World!"
+# algoritmo  "1005"
 import math
 
 
 
-a,b,x:math.inteiro
+a = 0
+b = 0
 
 
-a= input()
-b= input()
-x = a + b
-print("X =",x)
+
+a = input()
+b = input()
+if (a mod b == 0) ou (b mod a == 0) :
+print("Sao Multiplos")
+math.else
+print("Nao sao Multiplos")
+
+
 
 
