@@ -1,18 +1,26 @@
-Algoritmo "1005"
+Algoritmo "semnome"
 
 Var
-a:inteiro
-b:inteiro
+a:real
 
 
 Inicio
 leia(a)
-leia(b)
-se (a mod b = 0) ou (b mod a = 0) entao
-  escreval("Sao Multiplos")
+se (a>=0) e (a<=25) entao
+  escreval("Intervalo [0.25]")
 senao
-  escreval("Nao sao Multiplos")
+  se (a>25) e (a<=50)entao
+    escreval("Intervalo [25.50]")
+  senao
+    se (a>50) e (a<=75) entao
+      escreval("Intervalo [50.75]")
+    senao
+      se (a>75) e (a<=100)
+        escreval("Intervalo [75.100]")
+      senao
+        escreval("Fora do intervalo")
+      fimse
+    fimse
+  fimse
 fimse
 
-
-Fimalgoritmo

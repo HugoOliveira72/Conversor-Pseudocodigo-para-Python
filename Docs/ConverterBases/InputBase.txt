@@ -1,7 +1,11 @@
 =
+>==
+<==
 <-
 <>
 //
+mod
+ e 
  : inteiro
 : inteiro
 :inteiro
