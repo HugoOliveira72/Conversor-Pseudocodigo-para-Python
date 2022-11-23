@@ -1,20 +1,25 @@
-# algoritmo  "semnome"
+# algoritmo  "1038"
 
 
-a = 0.0
+id = 0
+q = 0
+total = 0.0
 
 
-a = input()
-if (a >= 0) and (a <=25):
-    print("Intervalo [0.25]")
-else:
-    if (a > 25) and (a <=50):
-        print("Intervalo [25.50]")
-    else:
-        if (a > 50) and (a <=75):
-            print("Intervalo [50.75]")
-        else:
-            if (a > 75) and (a <=100):
-                print("Intervalo [75.100]")
-            else:
-                print("Fora do intervalo")
+
+id = float(input())
+q = float(input())
+
+
+if id ==  1:total = 4.00 * q
+elif id ==  2:total = 4.50 * q
+elif id ==  3:total = 5.00 * q
+elif id ==  4:total = 2.00 * q
+elif id ==  5:total = 1.50 * q
+
+
+print("Total: R$",total)
+
+
+for i in range(1,10,1):
+    print(i)

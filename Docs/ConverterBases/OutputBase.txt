@@ -6,6 +6,8 @@
 #
 %
 and
+or
+not
  = 0
  = 0
  = 0
@@ -15,15 +17,15 @@ and
  = ''
  = ''
  = ''
+ = false
+ = false
+ = false
 
 
 
 if
 else
 elif
- = false
- = false
- = false
 true
 false
 print(

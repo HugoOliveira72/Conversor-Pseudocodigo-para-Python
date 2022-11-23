@@ -1,26 +1,23 @@
-# algoritmo  "semnome"
+for i in range(1, 10, 1):
+  print(i)
 
 
-a = 0.0
-
-
+a = 0
+b = 0
 
 a = input()
-if (a>=0)and(a<=25) :
-print("Intervalo [0.25]")
+b = input()
+
+if a > 2 :
+  print("a é maior que 2")
+else 
+   if a == 2 :
+      print("a é igual a 2 ")
+   
 else
-if (a>25)and(a<=50):
-print("Intervalo [25.50]")
-else
-if (a>50)and(a<=75) :
-print("Intervalo [50.75]")
-else
-if (a>75)and(a<=100)
-print("Intervalo [75.100]")
-else
-print("Fora do intervalo")
+  print("a menor que 2")
 
 
-
-
-
+while i < 10     
+  print(i)
+  i = i + 1

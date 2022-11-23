@@ -1,26 +1,24 @@
-Algoritmo "semnome"
+for i in range(1, 10, 1):
+  escreval(i)
+fimpara
 
-Var
-a:real
+a:inteiro
+b:inteiro
 
-
-Inicio
 leia(a)
-se (a>=0) e (a<=25) entao
-  escreval("Intervalo [0.25]")
+leia(b)
+
+se a > 2 entao
+  escreval("a é maior que 2")
+senao 
+   se a = 2 entao
+      escreval("a é igual a 2 ")
+   fimse
 senao
-  se (a>25) e (a<=50)entao
-    escreval("Intervalo [25.50]")
-  senao
-    se (a>50) e (a<=75) entao
-      escreval("Intervalo [50.75]")
-    senao
-      se (a>75) e (a<=100)
-        escreval("Intervalo [75.100]")
-      senao
-        escreval("Fora do intervalo")
-      fimse
-    fimse
-  fimse
+  escreval("a menor que 2")
 fimse
 
+enquanto i < 10 faca
+  escreval(i)
+  i <- i + 1
+fimenquanto

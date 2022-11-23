@@ -6,6 +6,8 @@
 //
 mod
  e 
+ ou
+ nao
  : inteiro
 : inteiro
 :inteiro
@@ -15,15 +17,15 @@ mod
  : caractere
 : caractere
 :caractere
+ : logico
+: logico
+:logico
 fimfuncao
 fimprocedimento
 fimse
 se
-ifnao
+senao
 senao se
- : logico
-: logico
-:logico
 verdadeiro
 falso
 escreval(

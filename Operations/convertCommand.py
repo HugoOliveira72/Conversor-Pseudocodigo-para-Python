@@ -30,7 +30,7 @@ def convertWord():
     text = LoopingObject.forConverter()
 
     if text is not None:
-        writeExitFile(text)
+        writeFile(text,"Docs/Files","entrada")
     else:
         text = readFile("Docs/Files", "entrada")
 
@@ -43,15 +43,16 @@ def convertWord():
         # VAR
         textLines[j] = var(textLines[j])
 
-        mathReturn = ""
-        mathReturn = converterMath(textLines[j])
+        # MATH
+        # mathReturn = ""
+        # mathReturn = converterMath(textLines[j])
         
-        if mathFlag == 0 and mathReturn != textLines[j]:
-            textLines[j] = mathReturn
-            addAfterIndexMath = True
-            mathFlag += 1
-        elif mathFlag != 0:
-            textLines[j] = mathReturn
+        # if mathFlag == 0 and mathReturn != textLines[j]:
+        #     textLines[j] = mathReturn
+        #     addAfterIndexMath = True
+        #     mathFlag += 1
+        # elif mathFlag != 0:
+        #     textLines[j] = mathReturn
 
         # Funcoes
         if (validarFuncao(textLines[j])):
@@ -75,7 +76,7 @@ def convertWord():
             # Conversão geral pelos arquivos
             find = removeNBar(inputLines[i])
             change = removeNBar(outputLines[i])
-            textLines[j] = replaceFile(textLines[j].strip().lower()+"\n", find, change)
+            textLines[j] = replaceFile(textLines[j].lower(), find, change)
 
         # Devolver conteudo
         textLines[j] = replaceFile(
@@ -120,8 +121,8 @@ def convertWord():
             flag = True
 
     #Import Math
-    if addAfterIndexMath:
-        textLines.insert(1,"import math\n")
-        textLines.insert(2,"\n")
+    # if addAfterIndexMath:
+    #     textLines.insert(1,"import math\n")
+    #     textLines.insert(2,"\n")
 
     writeStringListExitFile(textLines)
