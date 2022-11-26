@@ -1,76 +1,31 @@
-algoritmo "TesteTCC_1"
+Algoritmo "Funcoes_Procedimentos"
 
-// DEFINIÇÃO DE VARIAVEIS
-var
-a:inteiro
-i:inteiro
-j:inteiro
-operacao:caracter
-
-vet: vetor[1..2] de inteiro
-vet2: vetor[1..3] de inteiro
-
+// FUNCAO
+funcao soma(x,y:inteiro):inteiro
 inicio
+  retorne x + y
+fimfuncao
 
-a <- 2
-i <- 1
-j <- 0
-operacao <- "+"
+// PROCEDIMENTO
+procedimento subtracao(x,y:inteiro)
+inicio
+  escreval(x - y)
+fimprocedimento
 
-// ESTRUTURAS DE REPETICAO
-escreval("PARA")
-for i in range(1, 10, 1):
-  escreval(i)
-fimpara
+Var
+a:inteiro
+b:inteiro
+res :inteiro
 
-escreval("ENQUANTO")
-enquanto j < 10 faca
-  escreval(j)
-  j <- j + 1
-fimenquanto
+Inicio
+a <- 3
+b <- 3
 
+escreval("RETORNO FUNCAO SOMA:")
+res <- soma(a,b)
+escreval(res)
 
-escreval("REPITA")
-i <- 0
-repita
-   escreval("i:",i)
-   i <- i + 1
-ate i = 10
+escreval("RETORNO PROCEDIMENTO SUBTRACAO:")
+subtracao(a,b)
 
-
-// ESTRUTURAS DE CONDIÇÃO
-escreval("CONDICIONAL 1")
-se a > 2 entao
-  escreval("a é maior que 2")
-senao
-  escreval("a é menor que ")
-fimse
-
-
-escreval("CONDICIONAL 2")
-se a = 2 entao
-  escreval("a igual 2")
-senao se a > 2 entao
-     escreval("a maior que 2")
-fimse
-
-escreval("CONDICIONAL 3")
-escolha operacao
-    caso "+"
-        escreva("Soma: ")
-        escreval(10 + 5)
-    caso "-"
-        escreva("Subtrcao: ")
-        escreval(10 - 5)
-    caso "*"
-        escreva("Multiplicao: ")
-        escreval(10 * 5)
-    caso "/"
-        escreva("Divisao: ")
-        escreval(10 / 5)
-    outrocaso
-        escreval("Erro ao escolher operacao")
-fimescolha
-
-
-fimalgoritmo
+Fimalgoritmo
