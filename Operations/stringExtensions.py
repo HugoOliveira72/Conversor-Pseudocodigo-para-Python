@@ -10,3 +10,12 @@ def addNBar(input):
 
 def removeLastCaracter(input):
     return input[:-1]
+
+
+def removeTabIdentation(linha):
+    resultLine = ''
+    for caracter in linha:
+        if caracter != ' ':
+            resultLine += caracter
+
+    return resultLine

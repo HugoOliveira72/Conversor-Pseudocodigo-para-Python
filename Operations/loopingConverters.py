@@ -79,12 +79,12 @@ class LoopingConverter:
         result = ''
 
         ate = ate.replace('ate','while')
-        ate = ate.replace(')','):')
+        ate = ate.replace('==','<=')
+        ate += ':\n'
         result = linhas
         result += ate
 
         result += linhas
         return result
         
-
 a = LoopingConverter()

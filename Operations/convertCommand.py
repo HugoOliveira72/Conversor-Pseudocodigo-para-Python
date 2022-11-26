@@ -109,7 +109,7 @@ def convertWord():
                     textLines.insert(initialPosition, line+'\n')
                 initialPosition += 1
         elif lock:
-            lines += textLines[j]
+            lines += removeTabIdentation(textLines[j])
 
         # Escolha - Caso
         if textLines[j].find('escolha') != -1:
