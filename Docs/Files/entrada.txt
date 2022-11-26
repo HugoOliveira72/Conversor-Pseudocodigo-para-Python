@@ -1,4 +1,31 @@
-repita
-   escreval("i:",i)
-   i <- i + 1
-ate i = 10
+Algoritmo "Funcoes_Procedimentos"
+
+// FUNCAO
+funcao soma(x,y:inteiro):inteiro
+inicio
+  retorne x + y
+fimfuncao
+
+// PROCEDIMENTO
+procedimento subtracao(x,y:inteiro)
+inicio
+  escreval(x - y)
+fimprocedimento
+
+Var
+a:inteiro
+b:inteiro
+res :inteiro
+
+Inicio
+a <- 3
+b <- 3
+
+escreval("RETORNO FUNCAO SOMA:")
+res <- soma(a,b)
+escreval(res)
+
+escreval("RETORNO PROCEDIMENTO SUBTRACAO:")
+subtracao(a,b)
+
+Fimalgoritmo
