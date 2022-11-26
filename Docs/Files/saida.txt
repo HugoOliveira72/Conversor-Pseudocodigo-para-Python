@@ -1,28 +1,72 @@
-# algoritmo  "Funcoes_Procedimentos"
+# algoritmo  "TesteTCC_1"
 
-# funcao
-def soma(x,y):
-  return x + y
-
-
-# procedimento
-def subtracao(x,y):
-  print(x - y)
-
-
+# definição de variaveis
 a = 0
-b = 0
-res  = 0
+i = 0
+j = 0
+operacao:caracter
+
+vet: [0,0]
+vet2: [0,0,0]
 
 
-a = 3
-b = 3
 
-print("RETORNO FUNCAO SOMA:")
-res = soma(a,b)
-print(res)
+a = 2
+i = 1
+j = 0
+operacao = "+"
 
-print("RETORNO PROCEDIMENTO SUBTRACAO:")
-subtracao(a,b)
+# estruturas de repeticao
+print("PARA")
+for i in range(1, 10, 1):
+  print(i)
 
 
+print("ENQUANTO")
+while j < 10     
+  print(j)
+  j = j + 1
+
+
+
+print("REPITA")
+i = 0
+print("i:",i)
+i=i+1
+while i <= 10
+   :
+   print("i:",i)
+   i==i+1
+
+
+# estruturas de condição
+print("CONDICIONAL 1")
+if a > 2 :
+  print("a é maior que 2")
+else
+  print("a é menor que ")
+
+
+
+print("CONDICIONAL 2")
+if a == 2 :
+  print("a igual 2")
+else if a > 2 :
+     print("a maior que 2")
+
+
+print("CONDICIONAL 3")
+
+if operacao ==      "+":        print(end=""+"Soma: ")
+        print(10 + 5)
+elif operacao ==      "-":        print(end=""+"Subtrcao: ")
+        print(10 - 5)
+elif operacao ==      "*":        print(end=""+"Multiplicao: ")
+        print(10 * 5)
+elif operacao ==      "/":        print(end=""+"Divisao: ")
+        print(10 / 5)
+elif operacao ==    ortro:        print("Erro ao escolher operacao")
+
+
+
+fimalgoritmo
