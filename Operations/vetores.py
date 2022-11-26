@@ -46,4 +46,4 @@ def convertVetores(frase):
         if (len(tamanhoVetores) > 1 and i < len(tamanhoVetores)-1):
             variavel += ","
 
-    return variavel
+    return variavel+"\n"

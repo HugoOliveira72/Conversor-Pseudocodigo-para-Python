@@ -83,10 +83,10 @@ def convertWord():
             textLines[j], "@parametro", currentParameter)
 
         # Repita
-        if (textLines[j].find('repita') != -1):
+        if (textLines[j].find('repita\n') != -1):
             repeatLine, positionRepeatLine = textLines[j], j
             lock = True
-        elif (textLines[j].find('ate (') != -1):
+        elif (textLines[j].find('ate ') != -1):
             # Chamar Repita e montar
             ateLine, positionAteLine = textLines[j], j
             repeatCurrentText = LoopingObject.repita(ateLine, lines)

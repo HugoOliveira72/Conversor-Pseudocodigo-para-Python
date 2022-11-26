@@ -24,7 +24,7 @@ fimfuncao
 fimprocedimento
 fimse
 se
-senao
+ifnao
 senao se
 verdadeiro
 falso
