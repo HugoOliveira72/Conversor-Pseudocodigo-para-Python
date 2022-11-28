@@ -1,31 +1,17 @@
-Algoritmo "Funcoes_Procedimentos"
-
-// FUNCAO
-funcao soma(x,y:inteiro):inteiro
-inicio
-  retorne x + y
-fimfuncao
-
-// PROCEDIMENTO
-procedimento subtracao(x,y:inteiro)
-inicio
-  escreval(x - y)
-fimprocedimento
-
-Var
-a:inteiro
-b:inteiro
-res :inteiro
-
-Inicio
-a <- 3
-b <- 3
-
-escreval("RETORNO FUNCAO SOMA:")
-res <- soma(a,b)
-escreval(res)
-
-escreval("RETORNO PROCEDIMENTO SUBTRACAO:")
-subtracao(a,b)
-
-Fimalgoritmo
+escreval("CONDICIONAL 3")
+escolha operacao
+    caso "+"
+        escreva("Soma: ")
+        escreval(10 + 5)
+    caso "-"
+        escreva("Subtrcao: ")
+        escreval(10 - 5)
+    caso "*"
+        escreva("Multiplicao: ")
+        escreval(10 * 5)
+    caso "/"
+        escreva("Divisao: ")
+        escreval(10 / 5)
+    outrocaso
+        escreval("Erro ao escolher operacao")
+fimescolha

@@ -1,28 +1,17 @@
-# algoritmo  "Funcoes_Procedimentos"
+print("CONDICIONAL 3")
 
-# funcao
-def soma(x,y):
-  return x + y
-
-
-# procedimento
-def subtracao(x,y):
-  print(x - y)
-
-
-a = 0
-b = 0
-res  = 0
-
-
-a = 3
-b = 3
-
-print("RETORNO FUNCAO SOMA:")
-res = soma(a,b)
-print(res)
-
-print("RETORNO PROCEDIMENTO SUBTRACAO:")
-subtracao(a,b)
-
+if operacao == "+":
+    print(end=""+"Soma:")
+    print(10+5)
+elif operacao == "-":
+    print(end=""+"Subtrcao:")
+    print(10-5)
+elif operacao == "*":
+    print(end=""+"Multiplicao:")
+    print(10*5)
+elif operacao == "/":
+    print(end=""+"Divisao:")
+    print(10/5)
+elif operacao == ortro:
+    print("Erroaoescolheroperacao")
 

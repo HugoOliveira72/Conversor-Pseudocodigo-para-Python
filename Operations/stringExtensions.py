@@ -19,3 +19,7 @@ def removeTabIdentation(linha):
             resultLine += caracter
 
     return resultLine
+
+def fixIdentation(linha):
+    result = removeTabIdentation(linha)
+    return '    '+result

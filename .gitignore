@@ -1,9 +1,0 @@
-
-# Pastas
-__pycache__/
-.vscode/
-
-# Arquivos de entrada e saida
-
-Docs/Files/entrada.txt
-Docs/Files/saida.txt

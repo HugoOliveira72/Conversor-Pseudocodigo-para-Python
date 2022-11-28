@@ -67,10 +67,10 @@ def convertWord():
             textLines[j] = convertInput(textLines[j].strip()+'\n')
             continue
 
-        # Aplicar regra das aspas
+        # Não Converter conteudo do escreval, (Aloca temporariamente esse conteudo em currentParameter)
         textLines[j], currentParameter = fixMarks(textLines[j])
 
-        # CONVERSÃO
+        # CONVERSÃO PELOS ARQUIVOS INPUT, OUTPUT
         for i in range(0, len(inputLines)):
 
             # Conversão geral pelos arquivos
@@ -78,7 +78,7 @@ def convertWord():
             change = removeNBar(outputLines[i])
             textLines[j] = replaceFile(textLines[j].lower(), find, change)
 
-        # Devolver conteudo
+        # Devolver conteudo de currentParameter
         textLines[j] = replaceFile(
             textLines[j], "@parametro", currentParameter)
 
@@ -98,6 +98,7 @@ def convertWord():
 
             initialPosition = positionRepeatLine
             c = 0
+
             # Ajustar Repita
             for line in repeatCurrentText:
                 if line.find('while') != -1:
@@ -116,10 +117,11 @@ def convertWord():
             variable = textLines[j].replace('escolha','').strip()
             textLines[j] = escolha(variable, textLines[j], flag)
             entered = 1
-        elif entered != 0 and textLines[j].find('caso') != -1:
-            textLines[j] = escolha(variable, textLines[j], flag).strip()
+        elif entered == 1 and textLines[j].find('caso') != -1:
+            textLines[j] = escolha(variable, removeTabIdentation(textLines[j]), flag)
             flag = True
-
+        elif entered == 1:
+            textLines[j] = fixIdentation(textLines[j])
     #Import Math
     # if addAfterIndexMath:
     #     textLines.insert(1,"import math\n")

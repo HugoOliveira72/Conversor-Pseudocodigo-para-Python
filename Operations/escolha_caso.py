@@ -1,5 +1,5 @@
 from enum import Flag
-from Operations.stringExtensions import removeNBar
+from Operations.stringExtensions import removeNBar, removeTabIdentation
 
 
 def escolha(variavel, linha, flag):
@@ -8,7 +8,8 @@ def escolha(variavel, linha, flag):
         linha = linha.replace('outrocaso','else:')
     elif linha.find('caso') != -1:
         condicao = linha.replace('caso','')
-        condicao = removeNBar(condicao) 
+        condicao = removeNBar(condicao)
+        condicao = removeTabIdentation(condicao)
         if flag == True: 
             return f'elif {variavel} == {condicao}:\n'
         return f'if {variavel} == {condicao}:\n'
