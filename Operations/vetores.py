@@ -26,6 +26,7 @@ def convertVetores(frase):
 
     tamanhoVetores = []
     tamanho = tamanho.replace("1..","")
+    variavel = variavel.replace(':',' <-')
 
     # Adicionar os tamanhos dos vetores
     for i in tamanho:
