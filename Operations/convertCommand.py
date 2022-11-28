@@ -112,6 +112,10 @@ def convertWord():
         elif lock:
             lines += removeTabIdentation(textLines[j])
 
+        # Enquanto
+        if textLines[j].find('enquanto') != -1: 
+            textLines[j] = LoopingObject.enquanto(textLines[j])
+
         # Escolha - Caso
         if textLines[j].find('escolha') != -1:
             variable = textLines[j].replace('escolha','').strip()

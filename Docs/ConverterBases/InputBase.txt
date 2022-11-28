@@ -35,7 +35,6 @@ escreva(
 entao
 fimpara
 fimenquanto
-enquanto
 faca
 inicio
 fimalgoritmo

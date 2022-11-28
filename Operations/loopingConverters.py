@@ -86,4 +86,10 @@ class LoopingConverter:
         result += linhas
         return result
         
+    def enquanto(self, linha):
+        result = linha.replace('enquanto', 'while')
+        result = removeNBar(result)
+        result += ':\n'
+        return result
+
 a = LoopingConverter()
