@@ -24,7 +24,7 @@ not
 
 
 if
-else
+else:
 elif
 true
 false
@@ -37,6 +37,6 @@ print(end=""+
 
     
 
-
+# fim
 # algoritmo 
 return
