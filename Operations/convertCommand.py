@@ -103,7 +103,7 @@ def convertWord():
             for line in repeatCurrentText:
                 if line.find('while') != -1:
                     c = initialPosition
-                    textLines.insert(initialPosition, line+'\n')
+                    textLines.insert(initialPosition, line+':\n')
                 elif c != 0:
                     textLines.insert(initialPosition, '   '+line+'\n')
                 else:

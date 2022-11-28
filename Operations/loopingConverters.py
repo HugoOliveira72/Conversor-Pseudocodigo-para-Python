@@ -80,7 +80,6 @@ class LoopingConverter:
 
         ate = ate.replace('ate','while')
         ate = ate.replace('==','<=')
-        ate += ':\n'
         result = linhas
         result += ate
 
