@@ -1,3 +1,59 @@
+algoritmo "TesteTCC_1"
+
+// DEFINIÇÃO DE VARIAVEIS
+var
+a:inteiro
+i:inteiro
+j:inteiro
+operacao:caracter
+
+vet: vetor[1..2] de inteiro
+vet2: vetor[1..3] de inteiro
+
+inicio
+
+a <- 2
+i <- 1
+j <- 0
+operacao <- "+"
+
+// ESTRUTURAS DE REPETICAO
+escreval("PARA")
+for i in range(1, 10, 1):
+  escreval(i)
+fimpara
+
+escreval("ENQUANTO")
+enquanto j < 10 faca
+  escreval(j)
+  j <- j + 1
+fimenquanto
+
+
+escreval("REPITA")
+i <- 0
+repita
+   escreval("i:",i)
+   i <- i + 1
+ate i = 10
+
+
+// ESTRUTURAS DE CONDIÇÃO
+escreval("CONDICIONAL 1")
+se a > 2 entao
+  escreval("a é maior que 2")
+senao
+  escreval("a é menor que ")
+fimse
+
+
+escreval("CONDICIONAL 2")
+se a = 2 entao
+  escreval("a igual 2")
+senao se a > 2 entao
+     escreval("a maior que 2")
+fimse
+
 escreval("CONDICIONAL 3")
 escolha operacao
     caso "+"
@@ -15,3 +71,6 @@ escolha operacao
     outrocaso
         escreval("Erro ao escolher operacao")
 fimescolha
+
+
+fimalgoritmo

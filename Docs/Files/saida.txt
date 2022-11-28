@@ -1,3 +1,59 @@
+# algoritmo  "TesteTCC_1"
+
+# definição de variaveis
+a = 0
+i = 0
+j = 0
+operacao:caracter
+
+vet: [0,0]
+vet2: [0,0,0]
+
+
+
+a = 2
+i = 1
+j = 0
+operacao = "+"
+
+# estruturas de repeticao
+print("PARA")
+for i in range(1, 10, 1):
+  print(i)
+
+
+print("ENQUANTO")
+while j < 10:
+  print(j)
+  j = j + 1
+
+
+
+print("REPITA")
+i = 0
+print("i:",i)
+i=i+1
+while i <= 10:
+   print("i:",i)
+   i==i+1
+
+
+# estruturas de condição
+print("CONDICIONAL 1")
+if a > 2 :
+  print("a é maior que 2")
+else
+  print("a é menor que ")
+
+
+
+print("CONDICIONAL 2")
+if a == 2 :
+  print("a igual 2")
+else if a > 2 :
+     print("a maior que 2")
+
+
 print("CONDICIONAL 3")
 
 if operacao == "+":
@@ -15,3 +71,6 @@ elif operacao == "/":
 elif operacao == ortro:
     print("Erroaoescolheroperacao")
 
+    
+    
+fimalgoritmo
