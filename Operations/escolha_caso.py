@@ -4,8 +4,8 @@ from Operations.stringExtensions import removeNBar, removeTabIdentation
 
 def escolha(variavel, linha, flag):
     condicao = ''
-    if linha.find('outrocaso') != -1:
-        linha = linha.replace('outrocaso','else:')
+    if linha.find('ortro') != -1:
+        linha = 'else:'
     elif linha.find('caso') != -1:
         condicao = linha.replace('caso','')
         condicao = removeNBar(condicao)
